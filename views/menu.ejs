@@ -6,10 +6,16 @@
   <title>Menu</title>
 </head>
 <%- include('./partials/nav') %>
-<%=menu%>
 
 <body>
-  <h1>Full Menu</h1>
+    <h1>Full Menu</h1>
+    <ul>
+        <% menu.forEach((item , index) => { %>
+    <h1><%= item.name %>: <%= item.price %> </h1>
+    <li><%= item.details %></li>
+    <li><%= item.rating %></li>
+    <% }); %>
+    </ul>
 </body>
 </html>
 
