@@ -52,6 +52,9 @@ app.get('/menu', (req, res) => {
 });
 
 app.get('/menu/:category' , (req, res) => {
+  const type = req.params.category;
+  
+
   res.render('category.ejs')
 });
 
@@ -63,7 +66,7 @@ app.get('/', (req, res) => {
     phone: '555-321-9876',});
 });
 
-app.listen(3000);
+app.listen(5000);
 
 
 

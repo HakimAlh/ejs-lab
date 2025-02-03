@@ -1,0 +1,5 @@
+<!-- <% const menuItems = [] %>
+     <% if (menuItems = req.params.mains) %>
+      <% menu.filter((mains) =>{
+        mains = mains
+    }) -->
